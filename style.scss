@@ -1,0 +1,37 @@
+.div1{
+    margin-top: 10%;
+    margin-left: 10%;
+    margin-right: 10%;
+    margin-bottom: 10%;
+}
+.div2{
+    width: 200px;
+    height: 200px;
+    background-color: plum;
+    animation: square 3s infinite alternate linear;
+}
+
+@mixin squ($r: 0 0 0 0, $c : black, $d: 0deg) 
+{
+    border-radius: $r;
+    background-color:$c;
+    transform: rotate($d);    
+}
+
+@keyframes square{
+    0%{
+        @include squ(0 0 0 0,coral ,0deg );
+    }
+    25%{
+        @include squ(50% 0 0 0,deeppink ,45deg );
+    }
+    50%{
+        @include squ(50% 50% 0 0 ,lightpink ,90deg);
+    }
+    75%{
+        @include squ(50% 50% 50% 0,hotpink ,135deg );
+    }
+    100%{
+        @include squ(50% 50% 50% 50%,slateblue ,180deg );
+    }
+}

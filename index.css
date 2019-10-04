@@ -1,0 +1,43 @@
+.div1 {
+  margin-top: 10%;
+  margin-left: 10%;
+  margin-right: 10%;
+  margin-bottom: 10%;
+}
+
+.div2 {
+  width: 200px;
+  height: 200px;
+  background-color: plum;
+  animation: square 3s infinite alternate linear;
+}
+
+@keyframes square {
+  0% {
+    border-radius: 0 0 0 0;
+    background-color: coral;
+    transform: rotate(0deg);
+  }
+  25% {
+    border-radius: 50% 0 0 0;
+    background-color: deeppink;
+    transform: rotate(45deg);
+  }
+  50% {
+    border-radius: 50% 50% 0 0;
+    background-color: lightpink;
+    transform: rotate(90deg);
+  }
+  75% {
+    border-radius: 50% 50% 50% 0;
+    background-color: hotpink;
+    transform: rotate(135deg);
+  }
+  100% {
+    border-radius: 50% 50% 50% 50%;
+    background-color: slateblue;
+    transform: rotate(180deg);
+  }
+}
+
+/*# sourceMappingURL=index.css.map */
